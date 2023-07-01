@@ -21,7 +21,7 @@ export default function UserData({ picture, username, hasError, isLoading, onBut
                 </Box>
             ) : (
                 <Stack direction="row" alignItems="center" spacing={2}>
-                    <Avatar alt="Image no available" src={picture.thumbnail}></Avatar>
+                    <Avatar alt="Image no available" src={picture.large} sx={{width: 96, height: 96}}></Avatar>
                     <div>
                         {username.first} {username.last}
                     </div>
